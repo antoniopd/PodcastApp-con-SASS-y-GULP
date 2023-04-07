@@ -52,7 +52,8 @@
 }
 
 @mixin bgImage($url, $colorDegradado) {
-
+    background-image: linear-gradient( $colorDegradado 0%, $colorDegradado 100% ), url( $url );
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: top center;
 }
