@@ -6,6 +6,8 @@
 
     h2{
         @include m.headingBorder(v.$blanco, v.$primario);
+        text-shadow: 1px 1px 6px rgba(0,0,0,0.8);
+
     }
 
     .descripcion {
@@ -28,7 +30,7 @@
     .plan {
         flex-grow: 1;
         background-color: v.$blanco;
-        padding: 16rem 4rem 4rem 4rem;
+        padding: 16rem 1rem 2rem 1rem;
         border-bottom: 1px solid #e1e1e1;
 
         @include m.tablet { 
@@ -39,6 +41,10 @@
             &:hover {
                 transform: scale(1.1);
             }
+        }
+
+        @include m.desktop { 
+            padding: 16rem 4rem 4rem 4rem;
         }
 
         .precio {
